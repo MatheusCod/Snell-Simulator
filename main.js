@@ -35,6 +35,10 @@ function create ()
 {
   graphics = this.add.graphics({ lineStyle: { width: 4, color: 0xaa00aa } });
 
+  game.scale.pageAlignHorizontally = true;
+  game.scale.pageAlignVertically = true;
+  game.scale.refresh();
+
   // Lines
   line1 = new Phaser.Geom.Line(
     game_width / 4, game_height / 4,

@@ -72,7 +72,7 @@ function create ()
 
       anim = false;
 
-      deg = this.getChildByID('angle').value;
+      deg = 90 - this.getChildByID('angle').value;
       angle = Phaser.Math.DegToRad(deg);
 
       if (deg > 180)
@@ -182,10 +182,10 @@ function update ()
     '\n' +
     '\n' +
     'Angle of Incidence: ' +
-    Number.parseFloat(Phaser.Math.RadToDeg(angle)).toPrecision(4) +
+    Number.parseFloat(90 - Phaser.Math.RadToDeg(angle)).toPrecision(4) +
     '\n' +
     'Angle of Refaction: ' +
-    Number.parseFloat(Phaser.Math.RadToDeg(new_angle)).toPrecision(4) +
+    Number.parseFloat(90 - Phaser.Math.RadToDeg(new_angle)).toPrecision(4) +
     '\n' +
     'Refractive index n1: ' +
     n1 +
